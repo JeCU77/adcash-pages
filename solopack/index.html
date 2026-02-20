@@ -4,15 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SoloPack 7z - Ad Container</title>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #0f0f0f;
+    }
+
+    #privacy {
+      position: fixed;
+      right: 8px;
+      bottom: 6px;
+      z-index: 2147483647;
+      font: 12px/1.2 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 6px;
+      padding: 4px 6px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    #privacy:hover {
+      color: rgba(255, 255, 255, 0.92);
+      background: rgba(0, 0, 0, 0.5);
+    }
+  </style>
 </head>
 <body>
-  <h1>SoloPack 7z</h1>
-  <p>SoloPack 7z is a Windows desktop utility for splitting large folders
-  into independent 7z archives.</p>
-  <p>This page serves as an ad container for the SoloPack 7z application.</p>
-
-  <hr>
-  <p><a href="privacy.html">Privacy Policy</a></p>
+  <a id="privacy" href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy</a>
 
   <script type="text/javascript" src="https://acscdn.com/script/aclib.js"></script>
   <script type="text/javascript">
@@ -20,5 +49,6 @@
       zoneId: 'w6fowfo2wq',
     });
   </script>
+  <noscript></noscript>
 </body>
 </html>
